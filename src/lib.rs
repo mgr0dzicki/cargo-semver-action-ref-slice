@@ -5,6 +5,8 @@ pub use self::opt_slice_mut as mut_opt_slice;
 #[allow(deprecated)]
 pub use self::ref_slice_mut as mut_ref_slice;
 
+pub fn do_nothing() {}
+
 /// Converts a reference to `A` into a slice of length 1 (without copying).
 #[inline]
 #[deprecated = "Similar method was added to std and stabilized in rust 1.28.0. \
