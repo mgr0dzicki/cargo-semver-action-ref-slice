@@ -9,7 +9,7 @@ pub use self::ref_slice_mut as mut_ref_slice;
 #[inline]
 #[deprecated = "Similar method was added to std and stabilized in rust 1.28.0. \
                 Use `core::slice::from_ref` instead."]
-pub fn ref_slice<A>(s: &A) -> &[A] {
+fn ref_slice<A>(s: &A) -> &[A] {
     unsafe { core::slice::from_raw_parts(s, 1) }
 }
 
