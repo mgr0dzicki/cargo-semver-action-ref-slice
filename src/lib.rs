@@ -5,6 +5,8 @@ pub use self::opt_slice_mut as mut_opt_slice;
 #[allow(deprecated)]
 pub use self::ref_slice_mut as mut_ref_slice;
 
+/// Mock function added only for testing purposes. Adding a new public function
+/// is not a breaking change, so a patch version bump is sufficient.
 pub fn do_nothing() {}
 
 /// Converts a reference to `A` into a slice of length 1 (without copying).
