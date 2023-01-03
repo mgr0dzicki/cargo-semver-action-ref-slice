@@ -6,6 +6,8 @@ pub use self::opt_slice_mut as mut_opt_slice;
 pub use self::ref_slice_mut as mut_ref_slice;
 
 /// Converts a reference to `A` into a slice of length 1 (without copying).
+/// The visibility is changed to private for testing purposes. It is a breaking
+/// change and requires a major version bump.
 #[inline]
 #[deprecated = "Similar method was added to std and stabilized in rust 1.28.0. \
                 Use `core::slice::from_ref` instead."]
